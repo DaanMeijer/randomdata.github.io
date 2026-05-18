@@ -32,7 +32,7 @@ function setStatus(open, lastUpdate) {
 }
 
 function mainLoop() {
-    fetch("https://randomdata.sandervankasteel.nl/index.json")
+    fetch("https://spacestate.lavalamp.randomdata.nl/index.json")
         .then(response => response.json())
         .then(function(data) {
             setStatus(data.state.open, data.state.lastchange);
